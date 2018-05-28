@@ -304,6 +304,11 @@ public:
 		return true;
 	}
 
+	~olcSprite()
+	{
+		if (m_Glyphs != nullptr) delete[] m_Glyphs;
+		if (m_Colours != nullptr) delete[] m_Colours;
+	}
 };
 
 
